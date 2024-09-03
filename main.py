@@ -30,7 +30,7 @@ class UserCreate(BaseModel):
     user_id: int
     user_email: EmailStr
     age: Optional[int] = None
-    recommendations: List[str]
+    recommendations: Optional[List[str]] = None
     ZIP: Optional[str] = None
 
 # Inicializar FastAPI
